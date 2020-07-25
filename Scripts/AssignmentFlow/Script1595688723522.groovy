@@ -14,13 +14,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('openAirBnb'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('setLocationExperiences'), [('location') : location], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl(airbnbUrl)
+WebUI.callTestCase(findTestCase('setDates'), [('duration') : durationDays], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('homePage/input_Location'), 5)
+WebUI.callTestCase(findTestCase('performSearch'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('setGuests'), [('adults') : adultCount, ('children') : childrenCount, ('infants') : infantCount], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('setPriceFilter'), [('minimumPrice') : minimumPrice, ('maximumPrice') : maximumPrice], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('extractSearchResults'), [('requiredIndex') : requiredIndexList], FailureHandling.STOP_ON_FAILURE)
 

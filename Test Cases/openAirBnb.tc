@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>53da2068-82ee-4dbf-ad71-cc036d59342c</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.hostUrl</defaultValue>
+      <description></description>
+      <id>40478688-7ad0-445f-b929-dd8dcc05491b</id>
+      <masked>false</masked>
+      <name>airbnbUrl</name>
+   </variable>
 </TestCaseEntity>

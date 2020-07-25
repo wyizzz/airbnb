@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AssignmentFlow</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d8bf52cf-db79-4615-ae90-1b1dfb0601a7</testCaseGuid>
+   <variable>
+      <defaultValue>'Sicily, Italy'</defaultValue>
+      <description></description>
+      <id>d72d34ec-a9d4-4b4e-a45e-c62da42d91f6</id>
+      <masked>false</masked>
+      <name>location</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>8b10168a-03e8-4be3-a9fb-dc468c61f61d</id>
+      <masked>false</masked>
+      <name>durationDays</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>bc1600cf-929b-4627-8a98-45adf23d3233</id>
+      <masked>false</masked>
+      <name>adultCount</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>7cf71c40-0f99-4a57-b396-21f4241daa21</id>
+      <masked>false</masked>
+      <name>infantCount</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>e5ec0282-431c-4ba2-8df9-583b938a8868</id>
+      <masked>false</masked>
+      <name>childrenCount</name>
+   </variable>
+   <variable>
+      <defaultValue>'900'</defaultValue>
+      <description></description>
+      <id>18659bd5-40f7-4e60-8ff8-b4ba0b89d29e</id>
+      <masked>false</masked>
+      <name>minimumPrice</name>
+   </variable>
+   <variable>
+      <defaultValue>'9000'</defaultValue>
+      <description></description>
+      <id>457033a4-9682-4970-af71-52abb33dd97d</id>
+      <masked>false</masked>
+      <name>maximumPrice</name>
+   </variable>
+   <variable>
+      <defaultValue>[0, 2]</defaultValue>
+      <description></description>
+      <id>60c8df33-e3e7-44a7-ac48-5b54bc80740a</id>
+      <masked>false</masked>
+      <name>requiredIndexList</name>
+   </variable>
+</TestCaseEntity>

@@ -19,13 +19,5 @@ WebUI.callTestCase(findTestCase('openAirBnb'), [:], FailureHandling.STOP_ON_FAIL
 
 WebUI.callTestCase(findTestCase('setLocationExperiences'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('setDates'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('performSearch'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('setGuests'), [('adults') : 5, ('children') : 0, ('infants') : 2], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('setPriceFilter'), [('minimumPrice') : '900', ('maximumPrice') : '9000'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('extractSearchResults'), [('requiredIndex') : [0, 2]], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('setDates'), [('durationDays') : 98], FailureHandling.STOP_ON_FAILURE)
 

@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0b3fad70-4824-47c7-9a43-bc1b2e2d8608</testCaseGuid>
+   <variable>
+      <defaultValue>'Sicily, Italy'</defaultValue>
+      <description></description>
+      <id>f262134e-75ac-4801-bd29-7db04b766f75</id>
+      <masked>false</masked>
+      <name>location</name>
+   </variable>
 </TestCaseEntity>

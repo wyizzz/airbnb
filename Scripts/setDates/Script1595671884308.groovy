@@ -18,16 +18,20 @@ import genericUtil.GenericUtil as GenericUtil
 import internal.GlobalVariable as GlobalVariable
 
 KeywordLogger log = new KeywordLogger()
-
 WebUI.click(findTestObject('homePage/inputButton_selectDates'))
-
 WebUI.verifyElementPresent(findTestObject('homePage/assert/dateSelectionClicked'), 5)
 
-CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/select_fromDate'), 5)
+TestObject select_startDateToday = CustomKeywords.'airbnbSelectors.SelectorBuilder.getStartDateSelector'()
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(select_startDateToday, 5)
 
-while (!(CustomKeywords.'genericUtil.GenericUtil.isElementPresent'(findTestObject('homePage/select_toDate'), 2))) {
+TestObject select_endDate = CustomKeywords.'airbnbSelectors.SelectorBuilder.getEndDateSelector'(durationDays)
+while (!(CustomKeywords.'genericUtil.GenericUtil.isElementPresent'(select_endDate, 2))) {
     CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/button_nextMonth'), 5)
 }
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(select_endDate, 5)
 
-CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/select_toDate'), 5)
+TestObject assertionElementStartDate = CustomKeywords.'airbnbSelectors.SelectorBuilder.getAssertionElementStartDate'();
+WebUI.verifyElementPresent(assertionElementStartDate, 5)
 
+TestObject assertionElementEndDate = CustomKeywords.'airbnbSelectors.SelectorBuilder.getAssertionElementEndDate'(durationDays);
+WebUI.verifyElementPresent(assertionElementStartDate, 5)

@@ -76,4 +76,11 @@ public class GenericUtil {
 		}
 	}
 
+	def Calendar addedDaysDateObject(int days){
+		Calendar c = Calendar.getInstance();
+		c.setTime(new Date());
+		c.add(Calendar.DATE, days);
+		return c;
+	}
+
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Debug</name>
+   <name>Debugger</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d8bf52cf-db79-4615-ae90-1b1dfb0601a7</testCaseGuid>
+   <testCaseGuid>6abb2ec5-8585-46fc-b5c2-d1c9aa00dcbb</testCaseGuid>
 </TestCaseEntity>
