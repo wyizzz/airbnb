@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>setGuests</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d2f2719-1989-48f5-83cb-9f57d234cbb9</testCaseGuid>
+   <variable>
+      <defaultValue>5</defaultValue>
+      <description></description>
+      <id>06ed7342-03e1-489d-aa7c-ab5f5e06a8cf</id>
+      <masked>false</masked>
+      <name>adults</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>4e9b2120-22af-4526-abc3-57667fe7e1a6</id>
+      <masked>false</masked>
+      <name>children</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>30a4ea85-c488-4776-8cfd-dd399bc7d1cf</id>
+      <masked>false</masked>
+      <name>infants</name>
+   </variable>
+</TestCaseEntity>

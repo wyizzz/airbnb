@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>inputButton_selectDates</name>
+   <tag></tag>
+   <elementGuidId>e2deefbf-1ee3-4fb3-8098-3921a71a6010</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button[data-testid=&quot;structured-search-input-field-dates-button&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Navigate forward to access suggested results'])[1]/following::div[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>_seuyf</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DateAdd when you want to go</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;js-focus-visible&quot;]/body[@class=&quot;with-new-header&quot;]/div[6]/div[1]/div[1]/div[2]/div[@class=&quot;_16grqhk&quot;]/div[@class=&quot;_siy8gh&quot;]/div[@class=&quot;_1gw6tte&quot;]/header[@class=&quot;_cc18tvb&quot;]/div[@class=&quot;_eqf9j0&quot;]/div[@class=&quot;_17bi5xcg&quot;]/div[1]/div[@class=&quot;_1lveqk8&quot;]/div[1]/form[@class=&quot;_1keztfl&quot;]/div[@class=&quot;_1rrb221v&quot;]/div[@class=&quot;_1jzu25z&quot;]/div[@class=&quot;_tqqxzz&quot;]/button[@class=&quot;_ev06c7n&quot;]/div[@class=&quot;_seuyf&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Navigate forward to access suggested results'])[1]/following::div[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Location'])[1]/following::div[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/button/div</value>
+   </webElementXpaths>
+</WebElementEntity>
