@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>extractSearchResults</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>83a7ef65-3ee8-45f9-bed4-2f15baf76b06</testCaseGuid>
+   <variable>
+      <defaultValue>[3, 1]</defaultValue>
+      <description></description>
+      <id>a26cedb8-e2b1-40f2-bb7d-78eec0fcafb2</id>
+      <masked>false</masked>
+      <name>requiredIndex</name>
+   </variable>
+</TestCaseEntity>

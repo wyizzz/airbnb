@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Open AirBnb</name>
+   <name>openAirBnb</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>53da2068-82ee-4dbf-ad71-cc036d59342c</testCaseGuid>

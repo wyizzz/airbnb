@@ -52,4 +52,12 @@ public class GenericUtil {
 		return false;
 	}
 
+	@Keyword
+	def getWebElements(TestObject to){
+		WebDriver driver = DriverFactory.getWebDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		List<WebElement> elements=driver.findElements(WebUiCommonHelper.buildLocator(to));
+		return elements;
+	}
+
 }

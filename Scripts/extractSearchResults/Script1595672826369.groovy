@@ -15,15 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('openAirBnb'), [:], FailureHandling.STOP_ON_FAILURE)
+import org.openqa.selenium.WebElement;
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.callTestCase(findTestCase('setLocationExperiences'), [:], FailureHandling.STOP_ON_FAILURE)
+KeywordLogger log = new KeywordLogger();
+List<WebElement> searchResults = CustomKeywords.'genericUtil.GenericUtil.getWebElements'(findTestObject('searchResultsPage/container_resultElements'))
 
-WebUI.callTestCase(findTestCase('setDates'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('performSearch'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('setGuests'), [('adults') : 5, ('children') : 0, ('infants') : 2], FailureHandling.STOP_ON_FAILURE)
+List<String> resultSet =new ArrayList<String>();
 
-WebUI.callTestCase(findTestCase('extractSearchResults'), [('requiredIndex') : [0, 2]], FailureHandling.STOP_ON_FAILURE)
+for(int index : requiredIndex){
+	resultSet.add(searchResults.get(index).getAttribute("href").toString());
+}
+
+for(String s: resultSet){
+	log.logWarning(s);
+}
 
