@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_saveGuestFilters</name>
+   <name>input_Location</name>
    <tag></tag>
-   <elementGuidId>5c3b2a4a-58e3-445c-b7a3-5b656935bafd</elementGuidId>
+   <elementGuidId>0de99f3f-2166-42fe-b32d-51c3d1365843</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div[data-testid*=&quot;guest_picker&quot;]>div>div>div>button[id=&quot;filter-panel-save-button&quot;]</value>
+         <value>input[role=&quot;combobox&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

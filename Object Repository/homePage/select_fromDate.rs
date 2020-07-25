@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>fromDate</name>
+   <name>select_fromDate</name>
    <tag></tag>
    <elementGuidId>0c3449b2-6b56-4673-a7f5-40e43b70ede3</elementGuidId>
    <selectorCollection>

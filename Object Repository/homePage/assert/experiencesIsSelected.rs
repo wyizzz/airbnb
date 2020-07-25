@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>assert_ExperiencesSelected</name>
+   <name>experiencesIsSelected</name>
    <tag></tag>
    <elementGuidId>da9ef0bf-9f36-4029-9a11-87f8903a04dc</elementGuidId>
    <selectorCollection>

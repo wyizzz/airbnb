@@ -21,14 +21,13 @@ KeywordLogger log = new KeywordLogger()
 
 WebUI.click(findTestObject('homePage/inputButton_selectDates'))
 
-WebUI.verifyElementPresent(findTestObject('assert/dateSelectionClicked'), 5)
+WebUI.verifyElementPresent(findTestObject('homePage/assert/dateSelectionClicked'), 5)
 
-CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/fromDate'), 5)
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/select_fromDate'), 5)
 
-//log.logWarning(CustomKeywords.'genericUtil.GenericUtil.isElementPresent'(findTestObject('homePage/toDate'), 2))
-while (!(CustomKeywords.'genericUtil.GenericUtil.isElementPresent'(findTestObject('homePage/toDate'), 2))) {
+while (!(CustomKeywords.'genericUtil.GenericUtil.isElementPresent'(findTestObject('homePage/select_toDate'), 2))) {
     CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/button_nextMonth'), 5)
 }
 
-CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/toDate'), 5)
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('homePage/select_toDate'), 5)
 

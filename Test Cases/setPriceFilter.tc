@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>setPriceFilter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96731265-773e-4491-8937-80aac32d11c6</testCaseGuid>
+   <variable>
+      <defaultValue>'900'</defaultValue>
+      <description></description>
+      <id>281e3378-0f96-4697-ac03-efa798f39a51</id>
+      <masked>false</masked>
+      <name>minimumPrice</name>
+   </variable>
+   <variable>
+      <defaultValue>'9000'</defaultValue>
+      <description></description>
+      <id>d145731e-917b-4c45-8bd5-d13a780c1e45</id>
+      <masked>false</masked>
+      <name>maximumPrice</name>
+   </variable>
+</TestCaseEntity>

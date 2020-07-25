@@ -22,5 +22,5 @@ WebUI.maximizeWindow();
 
 WebUI.navigateToUrl('https://www.airbnb.co.in/')
 
-WebUI.verifyElementPresent(findTestObject('homePage/inputLocation'), 5)
+WebUI.verifyElementPresent(findTestObject('homePage/input_Location'), 5)
 

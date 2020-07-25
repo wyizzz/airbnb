@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_saveGuestFilters</name>
+   <name>input_minimumPrice</name>
    <tag></tag>
-   <elementGuidId>5c3b2a4a-58e3-445c-b7a3-5b656935bafd</elementGuidId>
+   <elementGuidId>dfd7c5a1-ccf6-4e36-a6f3-e924b8702c67</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div[data-testid*=&quot;guest_picker&quot;]>div>div>div>button[id=&quot;filter-panel-save-button&quot;]</value>
+         <value>input[id=&quot;price_filter_min&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

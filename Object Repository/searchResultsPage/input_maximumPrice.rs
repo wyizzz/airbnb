@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_saveGuestFilters</name>
+   <name>input_maximumPrice</name>
    <tag></tag>
-   <elementGuidId>5c3b2a4a-58e3-445c-b7a3-5b656935bafd</elementGuidId>
+   <elementGuidId>be1ad5da-8695-4610-a732-120b29cf8129</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div[data-testid*=&quot;guest_picker&quot;]>div>div>div>button[id=&quot;filter-panel-save-button&quot;]</value>
+         <value>input[id=&quot;price_filter_max&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

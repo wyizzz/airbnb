@@ -25,6 +25,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import java.util.concurrent.TimeUnit;
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
+import org.openqa.selenium.Keys as Keys
 
 import internal.GlobalVariable
 
@@ -58,6 +59,21 @@ public class GenericUtil {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> elements=driver.findElements(WebUiCommonHelper.buildLocator(to));
 		return elements;
+	}
+
+	@Keyword
+	def inputDataField(TestObject to, String inputData){
+		WebDriver driver = DriverFactory.getWebDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		WebElement fieldLoc = driver.findElement(WebUiCommonHelper.buildLocator(to));
+		fieldLoc.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+		fieldLoc.sendKeys(Keys.BACK_SPACE);
+
+		for (int i = 0; i < inputData.length(); i++){
+			char c = inputData.charAt(i);
+			String s = new StringBuilder().append(c).toString();
+			fieldLoc.sendKeys(s);
+		}
 	}
 
 }

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_saveGuestFilters</name>
+   <name>button_price</name>
    <tag></tag>
-   <elementGuidId>5c3b2a4a-58e3-445c-b7a3-5b656935bafd</elementGuidId>
+   <elementGuidId>f3656b9d-28fc-445e-bc83-2dea7ed5d39f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>div[data-testid*=&quot;guest_picker&quot;]>div>div>div>button[id=&quot;filter-panel-save-button&quot;]</value>
+         <value>div[id=&quot;menuItemButton-price_range&quot;]>button>span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

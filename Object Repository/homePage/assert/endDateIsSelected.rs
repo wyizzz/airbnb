@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputLocation</name>
+   <name>endDateIsSelected</name>
    <tag></tag>
-   <elementGuidId>0de99f3f-2166-42fe-b32d-51c3d1365843</elementGuidId>
+   <elementGuidId>96b36331-732f-47e2-be61-6d752a5e4f94</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>input[role=&quot;combobox&quot;]</value>
+         <value>td[aria-label=&quot;Selected start date. Saturday, July 25, 2020&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_saveGuestFilters</name>
+   <name>startDateIsSelected</name>
    <tag></tag>
-   <elementGuidId>5c3b2a4a-58e3-445c-b7a3-5b656935bafd</elementGuidId>
+   <elementGuidId>2aaa561a-f8e8-4e3b-8f8d-3b97ecafef48</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div[data-testid*=&quot;guest_picker&quot;]>div>div>div>button[id=&quot;filter-panel-save-button&quot;]</value>
+         <value>td[aria-label=&quot;Selected start date. Saturday, July 25, 2020&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

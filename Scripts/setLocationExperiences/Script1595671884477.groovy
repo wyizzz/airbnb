@@ -16,9 +16,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('homePage/inputLocation'), 'Sicily, Italy')
+WebUI.setText(findTestObject('homePage/input_Location'), 'Sicily, Italy')
 
 WebUI.click(findTestObject('homePage/label_Experiences'))
 
-WebUI.verifyElementPresent(findTestObject('assert/assert_ExperiencesSelected'), 5)
+WebUI.verifyElementPresent(findTestObject('homePage/assert/experiencesIsSelected'), 5)
 

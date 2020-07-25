@@ -19,7 +19,7 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 KeywordLogger log = new KeywordLogger()
 
-CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_Guests'), 5)
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_guests'), 5)
 
 for (int i = 0; i < adults; i++) {
     CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_increaseAdults'), 5)

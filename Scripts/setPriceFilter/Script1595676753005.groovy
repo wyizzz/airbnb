@@ -15,17 +15,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('openAirBnb'), [:], FailureHandling.STOP_ON_FAILURE)
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.callTestCase(findTestCase('setLocationExperiences'), [:], FailureHandling.STOP_ON_FAILURE)
+KeywordLogger log = new KeywordLogger()
 
-WebUI.callTestCase(findTestCase('setDates'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_price'), 5)
 
-WebUI.callTestCase(findTestCase('performSearch'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'genericUtil.GenericUtil.inputDataField'(findTestObject('searchResultsPage/input_minimumPrice'), minimumPrice)
+CustomKeywords.'genericUtil.GenericUtil.inputDataField'(findTestObject('searchResultsPage/input_maximumPrice'), maximumPrice)
 
-WebUI.callTestCase(findTestCase('setGuests'), [('adults') : 5, ('children') : 0, ('infants') : 2], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_savePriceFilters'), 5)
 
-WebUI.callTestCase(findTestCase('setPriceFilter'), [('minimumPrice') : '900', ('maximumPrice') : '9000'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('extractSearchResults'), [('requiredIndex') : [0, 2]], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('searchResultsPage/assert/priceFilterIsApplied'), 5)
 
