@@ -43,13 +43,12 @@ public class GenericUtil {
 	@Keyword
 	def isElementPresent(TestObject to, int timeout){
 		WebDriver driver = DriverFactory.getWebDriver();
-		//		return WebUiCommonHelper.isElementVisibleInViewport(driver, to, timeout)
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		if(driver.findElements(WebUiCommonHelper.buildLocator(to)).size()!=0){
-			log.logWarning("Present!");
+//			log.logWarning("Present!");
 			return true;
 		}
-		log.logWarning("not Present");
+//		log.logWarning("not Present");
 		return false;
 	}
 
@@ -81,6 +80,20 @@ public class GenericUtil {
 		c.setTime(new Date());
 		c.add(Calendar.DATE, days);
 		return c;
+	}
+
+	@Keyword
+	def openLinkInNewTab(String navigationUrl){
+		String currentPage = WebUI.getUrl()
+		int currentTab = WebUI.getWindowIndex()
+		WebDriver driver = DriverFactory.getWebDriver()
+		JavascriptExecutor js = ((driver) as JavascriptExecutor)
+		js.executeScript('window.open();')
+		WebUI.switchToWindowIndex(currentTab + 1)
+		WebUI.navigateToUrl(currentPage)
+		WebUI.navigateToUrl(navigationUrl)
+		WebUI.switchToWindowIndex(currentTab)
+		WebUI.navigateToUrl(currentPage)
 	}
 
 }

@@ -30,7 +30,19 @@ public class SelectorBuilder {
 	@Keyword
 	def TestObject getGuestCountAssertionSelector(int adults, int children, int infants) {
 		int guests = adults+children;
-		String xpathFormat = "//span[@aria-label=\""+guests+" guests, "+infants+" infants\"]";
+
+		String xpathFormat = "//span[@aria-label=\""+guests+" guest";
+		if(adults>1 || children!=0){
+			xpathFormat = xpathFormat+"s";
+		}
+
+		if(infants!=0){
+			xpathFormat=xpathFormat+", "+infants+" infants\"]";
+		}
+		else{
+			xpathFormat=xpathFormat+"\"]";
+		}
+
 		TestObject selectorObject = new TestObject()
 		selectorObject.addProperty("xpath", ConditionType.EQUALS, xpathFormat)
 		return selectorObject

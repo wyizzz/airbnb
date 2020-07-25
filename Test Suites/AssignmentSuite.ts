@@ -11,4 +11,67 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>4190dd1d-2c6e-4eef-a3e0-ad8dd1fbb840</testSuiteGuid>
+   <testCaseLink>
+      <guid>de578212-4610-433f-88b9-53d4eacac3b3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/flow/AssignmentFlow</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>5d45df89-403b-42de-af3c-39904058d6bd</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/testData</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>location</value>
+         <variableId>d72d34ec-a9d4-4b4e-a45e-c62da42d91f6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>durationDays</value>
+         <variableId>8b10168a-03e8-4be3-a9fb-dc468c61f61d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>adultCount</value>
+         <variableId>bc1600cf-929b-4627-8a98-45adf23d3233</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>infantCount</value>
+         <variableId>7cf71c40-0f99-4a57-b396-21f4241daa21</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>childrenCount</value>
+         <variableId>e5ec0282-431c-4ba2-8df9-583b938a8868</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>minimumPrice</value>
+         <variableId>18659bd5-40f7-4e60-8ff8-b4ba0b89d29e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5d45df89-403b-42de-af3c-39904058d6bd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>maximumPrice</value>
+         <variableId>457033a4-9682-4970-af71-52abb33dd97d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>60c8df33-e3e7-44a7-ac48-5b54bc80740a</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -15,18 +15,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('openAirBnb'), [:], FailureHandling.STOP_ON_FAILURE)
+import org.openqa.selenium.WebElement;
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.callTestCase(findTestCase('setLocationExperiences'), [('location') : location], FailureHandling.STOP_ON_FAILURE)
+KeywordLogger log = new KeywordLogger();
+List<WebElement> searchResults = CustomKeywords.'genericUtil.GenericUtil.getWebElements'(findTestObject('searchResultsPage/container_resultElements'))
 
-WebUI.callTestCase(findTestCase('setDates'), [('duration') : durationDays], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('performSearch'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('setGuests'), [('adults') : adultCount, ('children') : childrenCount, ('infants') : infantCount], 
-    FailureHandling.STOP_ON_FAILURE)
+List<String> resultSetUrls =new ArrayList<String>();
 
-WebUI.callTestCase(findTestCase('setPriceFilter'), [('minimumPrice') : minimumPrice, ('maximumPrice') : maximumPrice], FailureHandling.STOP_ON_FAILURE)
+for(int index : requiredIndex){
+	resultSetUrls.add(searchResults.get(index).getAttribute("href").toString());
+}
 
-WebUI.callTestCase(findTestCase('extractSearchResults'), [('requiredIndex') : requiredIndexList], FailureHandling.STOP_ON_FAILURE)
+for(String requiredUrl: resultSetUrls){
+	log.logWarning("Result URL: "+requiredUrl);
+	CustomKeywords.'genericUtil.GenericUtil.openLinkInNewTab'(requiredUrl);
+}
 

@@ -15,9 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('openAirBnb'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('stepCases/openAirBnb'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('setLocationExperiences'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('stepCases/setLocationExperiences'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('setDates'), [('durationDays') : 98], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('stepCases/setDates'), [('durationDays') : 98], FailureHandling.STOP_ON_FAILURE)
 

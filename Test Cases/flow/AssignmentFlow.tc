@@ -13,7 +13,7 @@
       <name>location</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>90</defaultValue>
       <description></description>
       <id>8b10168a-03e8-4be3-a9fb-dc468c61f61d</id>
       <masked>false</masked>
@@ -34,7 +34,7 @@
       <name>infantCount</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>1</defaultValue>
       <description></description>
       <id>e5ec0282-431c-4ba2-8df9-583b938a8868</id>
       <masked>false</masked>

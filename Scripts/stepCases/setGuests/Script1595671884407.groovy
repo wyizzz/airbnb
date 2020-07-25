@@ -21,21 +21,27 @@ KeywordLogger log = new KeywordLogger()
 
 CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_guests'), 5)
 
-for (int i = 0; i < adults; i++) {
+
+int adultCount = Integer.parseInt(adults);
+int childrenCount = Integer.parseInt(children);
+int infantCount = Integer.parseInt(infants);
+
+for (int i = 0; i < adultCount; i++) {
+//	log.logWarning(i+" and adult: "+adults)
     CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_increaseAdults'), 5)
 }
 
-for (int i = 0; i < children; i++) {
+for (int i = 0; i < childrenCount; i++) {
     CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_increaseChildren'), 5)
 }
 
-for (int i = 0; i < infants; i++) {
+for (int i = 0; i < infantCount; i++) {
     CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_increaseInfants'), 5)
 }
 
 CustomKeywords.'genericUtil.GenericUtil.clickUsingJS'(findTestObject('searchResultsPage/button_saveGuestFilters'), 5);
 
-TestObject guestAssertionElement = CustomKeywords.'airbnbSelectors.SelectorBuilder.getGuestCountAssertionSelector'(adults, children, infants)
+TestObject guestAssertionElement = CustomKeywords.'airbnbSelectors.SelectorBuilder.getGuestCountAssertionSelector'(adultCount, childrenCount, infantCount)
 
 WebUI.verifyElementPresent(guestAssertionElement, 5)
 
